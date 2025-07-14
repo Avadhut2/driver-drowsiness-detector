@@ -50,7 +50,7 @@ class DrowsinessDetector:
         self.fps = 0
 
     def _init_detectors(self, predictor_path):
-        """Initialize dlib detectors with error handling"""
+        # Initialize dlib face detector and shape predictor
         try:
             self.detector = dlib.get_frontal_face_detector()
 
@@ -74,15 +74,7 @@ class DrowsinessDetector:
 
     @staticmethod
     def calculate_ear(eye_landmarks):
-        """
-        Calculate Eye Aspect Ratio (EAR) for given eye landmarks
-
-        Args:
-            eye_landmarks: Array of eye landmark coordinates
-
-        Returns:
-            float: Eye aspect ratio
-        """
+        # Calculate the Eye Aspect Ratio (EAR)
         try:
             A = distance.euclidean(eye_landmarks[1], eye_landmarks[5])
             B = distance.euclidean(eye_landmarks[2], eye_landmarks[4])
