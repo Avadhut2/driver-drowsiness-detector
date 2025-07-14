@@ -16,14 +16,7 @@ BASE_DIR = Path(__file__).resolve().parent
 class DrowsinessDetector:
 
     def __init__(self, ear_threshold=0.25, drowsy_time=2.0, predictor_path=None):
-        """
-        Initialize the drowsiness detector
-
-        Args:
-            ear_threshold (float): Eye aspect ratio threshold for drowsiness detection
-            drowsy_time (float): Time in seconds before considering drowsy
-            predictor_path (str): Path to dlib's facial landmark predictor
-        """
+        
         self.EAR_THRESHOLD = ear_threshold
         self.DROWSY_TIME = drowsy_time
         self.photo_captured = False
