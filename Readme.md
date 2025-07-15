@@ -15,7 +15,7 @@ A Python project that uses facial landmarks and eye aspect ratio (EAR) to detect
 
 
 
-```
+``` 
 driver-drowsiness-detector/
 │
 ├── main.py                          # Main script to run the detector
@@ -35,7 +35,9 @@ driver-drowsiness-detector/
    git clone https://github.com/your-username/driver-drowsiness-detector.git
 
 2. Install dependencies:
+``` 
     pip install -r requirements.txt
+``` 
 
 3. Download the model file:
 
@@ -45,10 +47,14 @@ Download shape_predictor_68_face_landmarks.dat
 Extract it and place it in the project directory
 
 4. ▶️ Run
+``` 
     python main.py
+``` 
 Or with arguments:
+``` 
     python main.py --camera 0 --ear-threshold 0.25 --drowsy-time 2.0
 
+``` 
 
 5. ## 🙌 Credits
 
