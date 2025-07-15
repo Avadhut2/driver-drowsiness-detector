@@ -13,6 +13,9 @@ A Python project that uses facial landmarks and eye aspect ratio (EAR) to detect
 
 ## 📂 Folder Structure
 
+
+
+```
 driver-drowsiness-detector/
 │
 ├── main.py                          # Main script to run the detector
@@ -21,8 +24,8 @@ driver-drowsiness-detector/
 ├── README.md                       # Project documentation
 │
 ├── drowsy_photos/                  # Folder to save captured drowsy images
-│
-├── shape_predictor_68_face_landmarks.dat   # Facial landmark model (Not included in repo)
+└── shape_predictor_68_face_landmarks.dat   # Facial landmark model (Not included in repo)
+```
 
 
 ## 🔧 Installation
